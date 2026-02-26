@@ -24,7 +24,7 @@
 
 :root {
     --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgb(25, 25, 28);
+    --ktl-dark-100: rgba(39, 40, 44, 1);
     --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
     --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
     --ktl-color-white-light: rgba(255, 255, 255, 0.75);
@@ -39,20 +39,16 @@
     --ktl-top-menu-z-index: 905;
     --ktl-header-z-index: 906;
     --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
+    --ktl-header-height-mobile: 48px;
     --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --rs-font-family-ui: var(--ktl-font-family-inter);
     --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
     --website-ui-text-color: #19191c;
     --website-ui-text-color-dark: #fff;
     --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
     --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
 
-:root {
     --ktl-box-block-s: 4px;
     --ktl-box-block-m: 8px;
     --ktl-box-block-l: 16px;
@@ -96,49 +92,7 @@
     }
 }
 
-:root {
-    --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
-    --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
-    --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
-    --ktl-color-white-light: rgba(255, 255, 255, 0.75);
-    --ktl-transition-xfast: 100ms;
-    --ktl-transition-fast: 300ms;
-    --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgba(39, 40, 44, 0.4);
-    --ktl-light-text-hard: rgba(39, 40, 44, 1);
-    --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
-    --ktl-divider-color: rgba(25, 25, 28, .2);
-    --ktl-overlay-z-index: 900;
-    --ktl-top-menu-z-index: 905;
-    --ktl-header-z-index: 906;
-    --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
-    --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
-    --website-ui-text-color: #19191c;
-    --website-ui-text-color-dark: #fff;
-    --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
-    --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
-
-:root {
-    --ktl-box-block-s: 4px;
-    --ktl-box-block-m: 8px;
-    --ktl-box-block-l: 16px;
-
-    --ktl-box-section-s: 24px;
-    --ktl-box-section-m: 32px;
-    --ktl-box-section-l: 48px;
-
-    --ktl-box-page-s: 64px;
-    --ktl-box-page-m: 72px;
-    --ktl-box-page-l: 96px;
-}
 
 .ktl-horizontal-menu-module_nav_gbA7M {
     display: block;
@@ -158,9 +112,14 @@
 }
 
 .ktl-horizontal-menu-module_menu-item_CXDEW {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    list-style: none;
+    letter-spacing: 0.0015em;
+    font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+    font-size: var(--rs-text-2-font-size, 16px);
+    font-weight: 400;
+    display: block;
     line-height: 60px !important;
     color: rgba(255, 255, 255, 0.75);
     border-top: 2px solid transparent;
@@ -171,7 +130,7 @@
 
 .ktl-horizontal-menu-module_menu-item_CXDEW:hover,
 .ktl-horizontal-menu-module_menu-item_CXDEW.ktl-horizontal-menu-module_expanded_3GFPc {
-    color: #ffffff;
+    color: #929395;
     border-bottom-color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
 }
@@ -270,51 +229,10 @@
     }
 }
 
-:root {
-    --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
-    --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
-    --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
-    --ktl-color-white-light: rgba(255, 255, 255, 0.75);
-    --ktl-transition-xfast: 100ms;
-    --ktl-transition-fast: 300ms;
-    --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgb(39, 40, 44);
-    --ktl-light-text-hard: rgba(39, 40, 44, 1);
-    --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
-    --ktl-divider-color: rgba(25, 25, 28, .2);
-    --ktl-overlay-z-index: 900;
-    --ktl-top-menu-z-index: 905;
-    --ktl-header-z-index: 906;
-    --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
-    --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
-    --website-ui-text-color: #19191c;
-    --website-ui-text-color-dark: #fff;
-    --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
-    --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
-
-:root {
-    --ktl-box-block-s: 4px;
-    --ktl-box-block-m: 8px;
-    --ktl-box-block-l: 16px;
-
-    --ktl-box-section-s: 24px;
-    --ktl-box-section-m: 32px;
-    --ktl-box-section-l: 48px;
-
-    --ktl-box-page-s: 64px;
-    --ktl-box-page-m: 72px;
-    --ktl-box-page-l: 96px;
-}
 
 .ktl-search-button-module_button_YHJPv {
+    -webkit-text-size-adjust: 100%;
     display: flex;
     visibility: hidden;
     -webkit-appearance: none;
@@ -333,6 +251,10 @@
     transition: color var(--ktl-transition-xfast),
     background-color var(--ktl-transition-xfast);
     color: var(--ktl-color-white-light);
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: normal;
+    fill: none;
 }
 
 .ktl-search-button-module_button_YHJPv.ktl-search-button-module_active_lUmdh {
@@ -378,6 +300,7 @@
 .ktl-result-module_text_fWBKG {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -424,6 +347,7 @@
     height: 40px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -450,6 +374,7 @@
 .ktl-empty-module_resultString_-8dzl {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     overflow-wrap: break-word;
@@ -462,6 +387,7 @@
 
     .ktl-empty-module_resultString_-8dzl {
         -webkit-line-clamp: 2;
+        line-clamp: 2;
     }
 }
 .ktl-loading-module_loading_CtOhW {
@@ -756,49 +682,7 @@
     }
 }
 
-:root {
-    --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
-    --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
-    --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
-    --ktl-color-white-light: rgba(255, 255, 255, 0.75);
-    --ktl-transition-xfast: 100ms;
-    --ktl-transition-fast: 300ms;
-    --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgba(39, 40, 44, 0.4);
-    --ktl-light-text-hard: rgba(39, 40, 44, 1);
-    --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
-    --ktl-divider-color: rgba(25, 25, 28, .2);
-    --ktl-overlay-z-index: 900;
-    --ktl-top-menu-z-index: 905;
-    --ktl-header-z-index: 906;
-    --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
-    --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
-    --website-ui-text-color: #19191c;
-    --website-ui-text-color-dark: #fff;
-    --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
-    --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
-
-:root {
-    --ktl-box-block-s: 4px;
-    --ktl-box-block-m: 8px;
-    --ktl-box-block-l: 16px;
-
-    --ktl-box-section-s: 24px;
-    --ktl-box-section-m: 32px;
-    --ktl-box-section-l: 48px;
-
-    --ktl-box-page-s: 64px;
-    --ktl-box-page-m: 72px;
-    --ktl-box-page-l: 96px;
-}
 
 .ktl-menu-popup-module_menu-popup_Q68IE {
     display: none;
@@ -818,6 +702,7 @@
 }
 
 .ktl-menu-button-module_button_wB9Mx {
+    -webkit-text-size-adjust: 100%;
     display: flex;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -828,13 +713,17 @@
     background: none;
     padding: 0;
     margin: 0;
-    width: var(--ktl-header-height-mobile);
-    height: var(--ktl-header-height-mobile);
+    width: 24px;
+    height: 24px;
     align-items: center;
     justify-content: center;
     transition: color var(--ktl-transition-xfast),
     background-color var(--ktl-transition-xfast);
     color: var(--ktl-color-white-light);
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: normal;
+    fill: none;
 }
 
 .ktl-menu-button-module_button_wB9Mx:hover,
@@ -842,49 +731,7 @@
     color: #ffffff;
 }
 
-:root {
-    --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
-    --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
-    --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
-    --ktl-color-white-light: rgba(255, 255, 255, 0.75);
-    --ktl-transition-xfast: 100ms;
-    --ktl-transition-fast: 300ms;
-    --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgba(39, 40, 44, 0.4);
-    --ktl-light-text-hard: rgba(39, 40, 44, 1);
-    --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
-    --ktl-divider-color: rgba(25, 25, 28, .2);
-    --ktl-overlay-z-index: 900;
-    --ktl-top-menu-z-index: 905;
-    --ktl-header-z-index: 906;
-    --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
-    --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
-    --website-ui-text-color: #19191c;
-    --website-ui-text-color-dark: #fff;
-    --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
-    --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
-
-:root {
-    --ktl-box-block-s: 4px;
-    --ktl-box-block-m: 8px;
-    --ktl-box-block-l: 16px;
-
-    --ktl-box-section-s: 24px;
-    --ktl-box-section-m: 32px;
-    --ktl-box-section-l: 48px;
-
-    --ktl-box-page-s: 64px;
-    --ktl-box-page-m: 72px;
-    --ktl-box-page-l: 96px;
-}
 
 .ktl-menu-list-item-module_menu-item_Aruue {
     --level: 0;
@@ -923,49 +770,7 @@
     padding-top: 8px;
 }
 
-:root {
-    --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
-    --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
-    --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
-    --ktl-color-white-light: rgba(255, 255, 255, 0.75);
-    --ktl-transition-xfast: 100ms;
-    --ktl-transition-fast: 300ms;
-    --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgba(39, 40, 44, 0.4);
-    --ktl-light-text-hard: rgba(39, 40, 44, 1);
-    --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
-    --ktl-divider-color: rgba(25, 25, 28, .2);
-    --ktl-overlay-z-index: 900;
-    --ktl-top-menu-z-index: 905;
-    --ktl-header-z-index: 906;
-    --ktl-mobile-dropdown-list-z-index: 907;
-    --ktl-header-height-mobile: 52px;
-    --ktl-font-family-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    --ktl-focus-outline: rgba(107,87,255,.8) 0 0 0 4px;
 
-}
-
-:root {
-    --website-ui-text-color: #19191c;
-    --website-ui-text-color-dark: #fff;
-    --website-ui-focus-outline-color: rgba(48, 127, 255, 0.5);
-    --website-ui-focus-outline: 4px solid var(--website-ui-focus-outline-color);
-}
-
-:root {
-    --ktl-box-block-s: 4px;
-    --ktl-box-block-m: 8px;
-    --ktl-box-block-l: 16px;
-
-    --ktl-box-section-s: 24px;
-    --ktl-box-section-m: 32px;
-    --ktl-box-section-l: 48px;
-
-    --ktl-box-page-s: 64px;
-    --ktl-box-page-m: 72px;
-    --ktl-box-page-l: 96px;
-}
 
 .ktl-menu-list-module_menu-item-group_mFvUE {
     margin: 8px 0 8px 0;
