@@ -13,17 +13,14 @@ import './index.scss';
 
 hljs.registerLanguage('kotlin', kotlin);
 
-const initialIndex = Math.floor(Math.random() * tabs.length);
+const initialIndex = 0;
 
 export function ProgrammingLanguage() {
     const textCn = useTextStyles();
     const [activeIndex, setActiveIndex] = useState(initialIndex);
-    const [highlighted, setHighlighted] = useState('');
 
-    React.useEffect(() => {
-        // Option 1: Using highlightAuto (string-based, safer for SSR/hydration)
-        const result = hljs.highlight(tabs[activeIndex].code, { language: 'kotlin' });
-        setHighlighted(result.value);
+    const highlighted = React.useMemo(() => {
+        return hljs.highlight(tabs[activeIndex].code, { language: 'kotlin' }).value;
     }, [activeIndex]);
 
     return (

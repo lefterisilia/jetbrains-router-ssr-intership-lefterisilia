@@ -22,3 +22,13 @@
     gap: 8px;
   }
 }
+
+.header-section {
+  &__card {
+    &:nth-child(n+3) {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
