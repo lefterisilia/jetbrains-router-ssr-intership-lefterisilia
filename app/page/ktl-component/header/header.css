@@ -24,7 +24,7 @@
 
 :root {
     --ktl-light-grey: #f4f4f4;
-    --ktl-dark-100: rgba(39, 40, 44, 1);
+    --ktl-dark-100: rgb(25, 25, 28);
     --ktl-dark-bg-hard: rgba(27, 27, 27, 1);
     --ktl-icon-color-dark: rgba(39, 40, 44, 0.75);
     --ktl-color-white-light: rgba(255, 255, 255, 0.75);
@@ -81,10 +81,11 @@
 
 .ktl-header-module_border_paN11 {
     box-shadow: inset 0 -1px rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(91, 91, 108); /* Adds a subtle dark edge */
 }
 
 .ktl-header-module_darkHeader_YLF76 {
-    background: #19191C;
+    background: #27282c;
     box-shadow: none;
 }
 
@@ -278,7 +279,7 @@
     --ktl-transition-xfast: 100ms;
     --ktl-transition-fast: 300ms;
     --ktl-color-primary-light-theme: #7f52ff;
-    --ktl-color-dark-40: rgba(39, 40, 44, 0.4);
+    --ktl-color-dark-40: rgb(39, 40, 44);
     --ktl-light-text-hard: rgba(39, 40, 44, 1);
     --ktl-light-dark-20: rgba(39, 40, 44, 0.2);
     --ktl-divider-color: rgba(25, 25, 28, .2);

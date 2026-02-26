@@ -34,9 +34,7 @@ const Header =
 
   // Simplified navigation items based on your previous HTML structure
   const navItems = [
-    {
-      title: 'Solutions',
-    },
+    { title: 'Solutions' },
     { title: 'Docs', url: '/docs/home.html' },
     { title: 'Community', url: '/community/' },
     { title: 'Teach', url: '/education/' }, // Added Teach
