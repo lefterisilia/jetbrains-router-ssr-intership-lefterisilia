@@ -17,7 +17,7 @@ A modern, production-ready template for building full-stack React applications u
 ## Getting Started
 
 
-# To create the repository i used:   npx create-react-router@latest jetbrains-router-ssr-intership-lefterisilia
+# To create the repository I used: npx create-react-router@latest jetbrains-router-ssr-intership-lefterisilia
 
 ### Installation
 

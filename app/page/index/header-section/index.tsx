@@ -23,7 +23,7 @@ export function HeaderSection() {
                 <h1 className={textCn('rs-hero')}>A modern programming language that makes developers happier</h1>
                 <div className="header-section__actions">
                     <div>
-                        <Button size="l" href="#">
+                        <Button size="l" href="#" className="header-section__get-started-btn">
                             Get started
                         </Button>
                         <Button mode="outline" size="l" href="#" className="header-section__why-btn">

@@ -16,6 +16,11 @@
     margin-left: 16px;
   }
 
+  &__get-started-btn {
+    background-color: rgb(76, 166, 255);
+    border-color: rgb(76, 166, 255);
+  }
+
   &__contributors {
     display: flex;
     align-items: center;
