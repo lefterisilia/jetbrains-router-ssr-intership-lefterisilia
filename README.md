@@ -16,13 +16,24 @@ A modern, production-ready template for building full-stack React applications u
 
 ## Getting Started
 
+
+# To create the repository i used:   npx create-react-router@latest jetbrains-router-ssr-intership-lefterisilia
+
 ### Installation
 
 Install the dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
+
 ```
+## I used --legacy-peer-deps because of the React Native version in the @rescui 
+## package from the old repository. 
+## I didn't want to replace those packages, so this flag allows npm to
+## bypass peer dependency conflicts and install the packages despite version incompatibilities. 
+## You can try without it if you want, but it may cause installation errors.
+
+
 
 ### Development
 
