@@ -10,10 +10,10 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { ThemeProvider } from '@rescui/ui-contexts';
-
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
+    { rel: "icon", type: "image/svg+xml", href: "../public/favicon.svg" },
+    {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
