@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import classNames from 'classnames';
 import './header.css';
 
@@ -31,6 +31,16 @@ const Header =
     }, forwardedRef) => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSearchVisible, setSearchVisible] = useState(false);
+  const hideTimeoutRef = useRef<number | null>(null);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hideTimeoutRef.current) {
+        clearTimeout(hideTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Simplified navigation items based on your previous HTML structure
   const navItems = [
@@ -74,8 +84,19 @@ const Header =
                 <li
                     key={item.title}
                     className="ktl-horizontal-menu-module_menu-item-wrap_j6zB-"
-                    onMouseEnter={() => item.children && setActiveDropdown(item.title)}
-                    onMouseLeave={() => setActiveDropdown(null)}
+                    onMouseEnter={() => {
+                      if (hideTimeoutRef.current) {
+                        clearTimeout(hideTimeoutRef.current);
+                        hideTimeoutRef.current = null;
+                      }
+                      if (item.children) setActiveDropdown(item.title);
+                    }}
+                    onMouseLeave={() => {
+                      hideTimeoutRef.current = window.setTimeout(() => {
+                        setActiveDropdown(null);
+                        hideTimeoutRef.current = null;
+                      }, 300);
+                    }}
                 >
                   {item.url ? (
                       <a className="ktl-horizontal-menu-module_menu-item_CXDEW" href={item.url}>{item.title}</a>
@@ -87,7 +108,9 @@ const Header =
                     {item.title}
                   </span>
                         {activeDropdown === item.title && (
-                            <ul className="ktl-horizontal-menu-module_dropdown-menu_jwdWI ktl-horizontal-menu-module_dropdown-menu-expanded_eX8Jy">
+                            <ul className={classNames('ktl-horizontal-menu-module_dropdown-menu_jwdWI', 'ktl-horizontal-menu-module_dropdown-menu-expanded_eX8Jy', {
+                              'ktl-horizontal-menu-module_dropdown-menu-align-right_YeB-9': item.title === 'Play'
+                            })}>
                               {item.children?.map(child => (
                                   <li key={child}>
                                     <a className="ktl-horizontal-menu-module_dropdown-menu-item_9gjwH" href="#">{child}</a>
@@ -103,7 +126,8 @@ const Header =
         </nav>
       </header>
   );
-});
+  });
+
 
 Header.displayName = 'Header';
 export { Header };
